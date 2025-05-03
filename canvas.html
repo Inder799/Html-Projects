@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        canvas{
+            border-radius: 5px;
+            background-color: #ffffff;
+            /* width: 80%; */
+            height: 80%;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="500" height="500">
+
+    </canvas>
+</body>
+<script>
+    const canvas = document.getElementById('canvas')
+    const ctx = canvas.getContext('2d')
+    canvas.width = window.innerWidth - 200; 
+
+    //fill rect
+    // ctx.fillStyle = "pink";
+    // ctx.fillRect(20, 20, 80, 30);
+    // ctx.fillStyle = "blue"
+    // ctx.fillRect(120, 20, 80, 30);
+
+    // strock rect
+    // ctx.linewidth = 5;
+    // ctx.strokeStyle = "green";
+    // ctx.strokeRect(20, 20, 80, 30);
+
+    // ctx.linewidth = 2;
+    // ctx.strokeStyle = "red";
+    // ctx.strokeRect(120, 20, 80, 30);
+
+
+
+    // clear Rect
+    // ctx.clearRect(25, 25, 70, 20);
+
+
+    // fill text
+    // ctx.font = '30px Arial';
+    // ctx.fillStyle = 'purple';
+    // ctx.fillText('Hey there', 100, 50)
+    // ctx.strokeStyle = 'red';
+    // ctx.strokeText('Hello World', 400, 50)
+
+    
+
+    // ctx.beginPath();
+    // ctx.moveTo(200, 150)
+    // ctx.lineTo(400, 150)
+    // ctx.lineTo(400, 250);
+    // ctx.lineTo(200, 250);
+    // ctx.lineTo(200, 150);
+
+    // ctx.lineWidth = 5;
+    // ctx.strokeStyle = 'red'
+    // ctx.stroke();
+    // ctx.fillStyle = 'blue'
+    // ctx.fill();
+
+
+    ctx.beginPath();
+    ctx.arc(200, 200, 70, 0, Math.PI * 2);
+    ctx.strokeStyle = 'red';
+    ctx.stroke();
+    ctx.fillStyle = 'blue'
+    ctx.fill()
+    
+    
+</script>
+</html>
